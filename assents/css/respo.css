@@ -1,0 +1,127 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: "Epilogue";
+}
+.container {
+  max-width: 1440px;
+  margin: auto;
+}
+.header {
+  display: grid;
+  margin-top: 32px;
+  justify-content: space-between;
+  grid-template-columns: 1fr auto;
+}
+
+.nav {
+  display: flex;
+  list-style: none;
+  gap: 62px;
+}
+.nav li {
+  font-size: 14px;
+  line-height: 16px;
+  color: #686868;
+}
+.nav a {
+  text-decoration: none;
+}
+.btn {
+  padding: 13px 22px 13px 23px;
+  border: 1.5px solid #686868;
+  border-radius: 10px;
+  margin-left: 40px;
+}
+.header-btn a {
+  text-decoration: none;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #686868;
+}
+.main {
+  margin-top: 184px;
+}
+.main h1 {
+  font-size: 80px;
+  font-weight: 700;
+  line-height: 80px;
+  letter-spacing: -1.1111111640930176px;
+  padding-bottom: 48px;
+}
+.main p {
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 28px;
+  color: #686868;
+}
+.main-btn {
+  padding: 15px 28px 13px 31px;
+  background: #151515;
+  font-size: 18px;
+  font-weight: 700;
+  line-height: 28px;
+  letter-spacing: -0.25px;
+  color: #fafafa;
+  text-decoration: none;
+  display: inline-block;
+  margin-top: 51px;
+}
+.mains {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 125px;
+}
+.margin-top {
+  margin-top: 67px;
+  margin-bottom: 130px;
+}
+.main-logos {
+  margin-top: 108px;
+  display: flex;
+  gap: 40px;
+}
+.mobile {
+  display: none;
+}
+.mobile-png {
+  display: none;
+}
+@media screen and (max-width: 500px) {
+  .margin-top {
+    display: none;
+  }
+  .mobile-png {
+    display: block;
+    margin: 71px auto;
+  }
+  .container {
+    max-width: 1400px;
+    margin: auto;
+  }
+  .mobile {
+    display: block;
+  }
+  .main-img {
+    display: none;
+  }
+  .header {
+    display: none;
+  }
+  .mobile-inner {
+    margin-bottom: 50px;
+    margin-top: 71px;
+  }
+  .mobile-text {
+    text-align: center;
+    margin-bottom: 48px;
+  }
+  .mobile-logo {
+    display: flex;
+    column-gap: 4px;
+  }
+}
